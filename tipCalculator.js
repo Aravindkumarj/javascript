@@ -5,15 +5,15 @@ function tipCalculator(a,b,c){
 	for (i = 0; i < arguments.length ; i++)
 	{
 		if (arguments[i] < 50){
-			tips[i] = arguments[i] * 0.2;
+			tips[i] = +(arguments[i] * 0.2).toFixed(2);
 			totalBill[i] = arguments[i]+ tips[i];
 		}
 		else if ((arguments[i]>= 50) && (arguments[i] <200)){
-			tips[i] = arguments[i] * 0.15;
+			tips[i] = +(arguments[i] * 0.15).toFixed(2);
 			totalBill[i] = arguments[i]+ tips[i];
 		}
 		else if (arguments[i]>= 200){
-			tips[i] = arguments[i] * 0.1;
+			tips[i] = +(arguments[i] * 0.1).toFixed(2);
 			totalBill[i] = arguments[i]+ tips[i];
 		}
 	}
