@@ -9,7 +9,7 @@ function tipCalculator(a,b,c){
 			totalBill[i] = arguments[i]+ tips[i];
 		}
 		else if ((arguments[i]>= 50) && (arguments[i] <200)){
-			tips[i] = arguments[i] * 0.5;
+			tips[i] = arguments[i] * 0.15;
 			totalBill[i] = arguments[i]+ tips[i];
 		}
 		else if (arguments[i]>= 200){
